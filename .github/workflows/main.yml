@@ -27,7 +27,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: production-files
-        path: ./build 
+        path: ./dist 
   deploy:
     name: Deploy
     needs: build
@@ -39,6 +39,6 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: production-files
-        path: ./build
+        path: ./dist
     
     
