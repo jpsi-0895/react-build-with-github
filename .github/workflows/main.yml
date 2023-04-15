@@ -1,0 +1,25 @@
+name: build & deploy
+on:
+  push:
+    branches:
+      - master      
+  pull_request:
+    branches:
+      - master
+    
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest   
+    steps:
+    - name: node install
+      uses: actions/checkout@v2
+    - name: install node.js
+      uses: actions/setup-node@v1
+      with: 
+        node-version: 13.x
+    - name: NPM Install packages
+      run: npm ci
+    
+    
