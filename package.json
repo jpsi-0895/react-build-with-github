@@ -2,7 +2,7 @@
   "name": "vreact",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  
   "homepage": "https://jpsi-0895.github.io/react-build-with-github/",
   "scripts": {
     "dev": "vite",
