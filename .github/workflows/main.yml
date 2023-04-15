@@ -20,6 +20,6 @@ jobs:
       with: 
         node-version: 14.x
     - name: NPM Install packages
-      run: npm ci
+      run: npm install
     
     
