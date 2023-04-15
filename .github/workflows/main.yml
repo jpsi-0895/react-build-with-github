@@ -21,5 +21,7 @@ jobs:
         node-version: 14.x
     - name: NPM Install packages
       run: npm install
+    - name: Npm build package
+      run: npm run build
     
     
