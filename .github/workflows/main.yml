@@ -41,4 +41,8 @@ jobs:
         name: production-files
         path: ./dist
     
-    
+    - name: deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.PAT }}
+        publish_dir: ./dist
