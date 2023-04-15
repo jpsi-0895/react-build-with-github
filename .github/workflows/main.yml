@@ -48,7 +48,7 @@ jobs:
         publish_dir: ./dist
 
     - name: deploy to hello
-      uses: peaceiris/actions-hello@v3
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.PAT }}
         publish_dir: ./dist
